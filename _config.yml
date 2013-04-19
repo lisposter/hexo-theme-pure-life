@@ -29,7 +29,7 @@ google_analytics:
 rss:
 
 # Social comment platform
-## plat: 
+## @plat: 
 ##      1 for disqus
 ##      2 for duoshuo
 social_comment:
