@@ -16,7 +16,7 @@ var disqus_shortname = '<%= theme.social_comment.disqus_shortname %>';
 <% } else if (theme.social_comment.duoshuo_shortname && theme.social_comment.plat == 2) {%>
 
 <script type="text/javascript">
-var duoshuoQuery = {short_name:"zhulime"};
+var duoshuoQuery = {short_name:"<%= theme.social_comment.duoshuo_shortname %>"};
 	(function() {
 		var ds = document.createElement('script');
 		ds.type = 'text/javascript';ds.async = true;
