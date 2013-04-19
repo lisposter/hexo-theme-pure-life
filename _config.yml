@@ -28,7 +28,11 @@ fancybox: true
 google_analytics:
 rss:
 
+# Social comment platform
+## plat: 
+##      1 for disqus
+##      2 for duoshuo
 social_comment:
   plat: 2
-  duoshuo_shortname: zhulime
-  disqus_shortname:
+  disqus_shortname: 
+  duoshuo_shortname: 
