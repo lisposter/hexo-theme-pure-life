@@ -1,9 +1,9 @@
 <script src="<%- config.root %>js/jquery.imagesloaded.min.js"></script>
 <script src="<%- config.root %>js/gallery.js"></script>
 
-<% if (config.disqus_shortname){ %>
+<% if (theme.social_comment.disqus_shortname && theme.social_comment.plat == 1){ %>
 <script type="text/javascript">
-var disqus_shortname = '<%= config.disqus_shortname %>';
+var disqus_shortname = '<%= theme.social_comment.disqus_shortname %>';
 
 (function(){
   var dsq = document.createElement('script');
@@ -12,6 +12,19 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
   dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments){ %>embed.js<% } else { %>count.js<% } %>';
   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 }());
+</script>
+<% } else if (theme.social_comment.duoshuo_shortname && theme.social_comment.plat == 2) {%>
+
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"zhulime"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = 'http://static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		|| document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
 </script>
 <% } %>
 

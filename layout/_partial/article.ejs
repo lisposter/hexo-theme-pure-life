@@ -24,11 +24,16 @@
             <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
           </div>
         <% } %>
-        <% if (item.comment && config.disqus_shortname){ %>
+        <% if (item.comment && theme.social_comment.disqus_shortname && theme.social_comment.plat == 1){ %>
         <div class="alignright">
           <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
         </div>
+        <% } else if (item.comment && theme.social_comment.disqus_shortname && theme.social_comment.plat == 2){  %>
+        <div class="alignright">
+          <a href="<%- item.permalink %>#duoshuo_thread" class="comment-link">Comments</a>
+        </div>
         <% } %>
+
       <% } else { %>
         <%- partial('post/category') %>
         <%- partial('post/tag') %>

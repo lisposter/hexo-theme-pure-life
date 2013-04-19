@@ -27,3 +27,8 @@ fancybox: true
 
 google_analytics:
 rss:
+
+social_comment:
+  plat: 2
+  duoshuo_shortname: zhulime
+  disqus_shortname:
