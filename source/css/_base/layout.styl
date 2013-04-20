@@ -1,62 +1,64 @@
 *
-  margin 0
-  padding 0
+	margin 0
+	padding 0
 
 body
-  background color-background
-  color color-font
-  font-family font-default
-  font-size 14px
-  text-shadow 0 0 1px transparent
-  @media screen and (max-width: 1260px)
-    margin 0 30px
-  @media screen and (max-width: 600px)
-    font-size 13px
+	background main-background
+	color color-font
+	font-family font-default
+	font-size 100%
+	text-shadow 0 0 1px transparent
+	@media screen and (max-width: 1260px)
+		margin 0 30px
+	@media screen and (max-width: 600px)
+		font-size 13px
 
 h1, h2, h3, h4, h5, h6
-  font-family font-title
+	font-family font-title
 
 h1
-  font-size 1.8em
+	font-size 1.8em
 
 h2
-  font-size 1.5em
+	font-size 1.5em
 
 h3
-  font-size 1.3em
+	font-size 1.3em
 
 a
-  text-decoration none
-  color color-link
-  &:hover
-    text-decoration underline
+	text-decoration none
+	color color-link
+	&:hover
+		color #09f
 
 .alignleft
-  float left
+	float left
 
 .alignright
-  float right
+	float right
 
 .clearfix
-  clearfix()
+	&:after
+		clear both
+		content "."
+		display block
+		height 0
+		visibility hidden
 
-.inner
-  width page-width
-  margin 0 auto
-  @media screen and (max-width: 1260px)
-    width 100%
 
-#main-col
-  width 900px
-  @media screen and (max-width: 1260px)
-    width 100%
-    margin-right -300px
-  @media screen and (max-width: 900px)
-    margin-right 0
-    float none
+#stick
+	// width 15%
+	height 100%
+	position fixed
+	left 0
+	top 0
 
 #wrapper
-  @media screen and (max-width: 1260px)
-    margin-right 300px
-  @media screen and (max-width: 900px)
-    margin-right 0
+	position relative
+	margin-left (15% + 6em + 1px)
+	border-left 1px solid #ddd
+
+#footer
+	position absolute
+	bottom 0
+	left 2em

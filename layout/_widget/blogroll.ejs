@@ -1,0 +1,8 @@
+<div class="widget blogroll">
+  <h3 class="title"><%= __('blog_roll') %></h3>	
+	<ul>
+		<% for (var i in theme.blogroll){ %>
+			<li><a href="<%- theme.blogroll[i] %>"><%= i %></a></li>
+		<% } %>
+	</ul>
+</div>

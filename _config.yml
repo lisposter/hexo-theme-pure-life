@@ -2,11 +2,19 @@ menu:
   Home: /
   Archives: /archives
 
+ext_link:
+  
+
+blogroll:
+  Leigh: http://zhuli.me
+  Zoe: http://zoechan.me
+  Test: http://test
+
+
 widgets: 
-- search
 - category
-- tag
-- twitter
+- tagcloud
+- blogroll
 
 excerpt_link: Read More
 
@@ -16,11 +24,11 @@ twitter:
   tweet_count: 5
 
 addthis:
-  enable: true
+  enable: false
   pubid:
-  facebook: true
-  twitter: true
-  google: true
+  facebook: false
+  twitter: false
+  google: false
   pinterest: true
 
 fancybox: true
@@ -28,11 +36,7 @@ fancybox: true
 google_analytics:
 rss:
 
-# Social comment platform
-## @plat: 
-##      1 for disqus
-##      2 for duoshuo
 social_comment:
   plat: 2
-  disqus_shortname: 
-  duoshuo_shortname: 
+  duoshuo_shortname: zhulime
+  disqus_shortname: lisposter

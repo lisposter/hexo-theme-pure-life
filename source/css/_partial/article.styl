@@ -2,43 +2,22 @@ icon-size = 32px
 icon-gap = 25px
 
 article
-  box-shadow 1px 2px 3px #ddd
-  background #fff
-  &.page
-    padding-left 20px
-    .icon
-      display none
-
-  &.post
-    .icon
-      &:before
-        content '\f016'
-
-  &.photo
-    .icon
-      &:before
-        content '\f030'
-
-  &.link
-    .icon
-      &:before
-        content '\f0c1'
-
     .title
       a
         &:after
           content '\f08e'
           color color-meta
-          font 12px font-icon
-          padding-left 10px
+          font 0.75em font-icon
+          padding-left 0.625em
           vertical-align super
 
   .post-content
-    padding 20px 20px 15px (icon-size + icon-gap + 20)
-    margin-bottom 50px
+    padding 2em 8em 2em 4em
+    margin-bottom 3em
+    border-bottom 1px solid color-border
     position relative
     @media screen and (max-width: 600px)
-      padding-left 20px
+      padding-left 1.5em
 
   .gallery
     overflow hidden
@@ -89,28 +68,10 @@ article
         right 10px
 
   header
-    .icon
-      width icon-size
-      height icon-size
-      margin-right icon-gap
-      position absolute
-      top 20px
-      left 20px
-      color color-link
-      @media screen and (max-width: 600px)
-        display none
-      &:before
-        position absolute
-        font 32px font-icon    
-        top 0
-        left 0 
-        width 32px
-        text-align center
-
     time
       color color-meta
       font 0.9em font-title
-      margin-bottom 5px
+      margin 0.5em 0
       display block
       line-height 1
 
@@ -118,15 +79,17 @@ article
       font-weight normal
       a
         color color-font
+        border-bottom 2px solid #eee
         &:hover
           color color-link
+          border-color #666
           text-decoration none
 
   .entry
     text-align justify
     line-height 1.6
     p, blockquote, ul, ol, dl, table, iframe, h3, h4, h5, h6, .video-container
-      margin-top 15px
+      margin-top 1em
 
     blockquote
       border-top 1px solid color-border
@@ -237,7 +200,7 @@ article
   footer
     margin-top 15px
     padding-top 10px
-    border-top 1px solid color-border
+    border-top 1px dashed color-border
     color color-meta
     font-size 0.9em
     line-height 16px
