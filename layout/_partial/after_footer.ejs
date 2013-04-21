@@ -38,3 +38,16 @@ var duoshuoQuery = {short_name:"<%= theme.social_comment.duoshuo_shortname %>"};
 })(jQuery);
 </script>
 <% } %>
+
+<% if (theme.bdlike.enable){ %>
+<script id="bdlike_shell"></script>
+<script>
+	var bdShare_config = {
+		"type":"<%= theme.bdlike.type %>",
+		"color":"<%= theme.bdlike.color %>",
+		"uid":"<%= theme.bdlike.uid %>",
+		"share":"<%= theme.bdlike.share %>"
+	};
+	document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + Math.ceil(new Date()/3600000);
+	</script>
+<% } %>
