@@ -9,6 +9,8 @@
 				<time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
 			<% } %>
 		</header>
+
+		<% if (!page.archive){ %>
 		<div class="entry">
 			<% if (item.excerpt && index){ %>
 				<%- item.excerpt %>
@@ -16,6 +18,8 @@
 				<%- item.content %>
 			<% } %>
 		</div>
+		<% } %>
+
 		<footer>
 			<% if (index){ %>
 				<% if (item.excerpt){ %>
