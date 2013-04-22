@@ -9,8 +9,14 @@
 </nav>
 <nav id="ext-nav" class="clearfix">
 	<ul>
-		<% for (var i in theme.ext_link){ %>
-			<li><a href="<%- theme.ext_link[i] %>"><%= i %></a></li>
+		<% if (theme.ext_link.twitter){ %>
+			<li><a class="ext_link" href="https://twitter.com/<%= theme.ext_link.twitter %>" title="Folow Me @Twitter"><i class="ext_link-twitter"></i></a></li>
+		<% } %>
+		<% if (theme.ext_link.github){ %>
+			<li><a class="ext_link" href="https://github.com/<%= theme.ext_link.github %>" title="Folow Me @Github"><i class="ext_link-github"></i></a></li>
+		<% } %>
+		<% if (theme.ext_link.rss){ %>
+			<li><a class="ext_link" href="<%= theme.ext_link.rss %>" title="Subscribe"><i class="ext_link-rss"></i></a></li>
 		<% } %>
 	</ul>
 </nav>
