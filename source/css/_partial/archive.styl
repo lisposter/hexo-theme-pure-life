@@ -1,26 +1,52 @@
 .archive-title
-  color color-meta
-  font-weight normal
-  margin 2em auto 0 5%
-  text-shadow 0 0 1px #fff
-  &:before
-    font-family font-icon
-    content '\f073'
-    padding-right 15px
+	color color-meta
+	font-weight normal
+	margin 2em auto 0 5%
+	text-shadow 0 0 1px #fff
+	&:before
+		font-family font-icon
+		content '\f073'
+		padding-right 15px
 
-  &.tag
-    &:before
-      content '\f02b'
+	&.tag
+		&:before
+			content '\f02b'
 
-  &.category
-    &:before
-      content '\f07b'
+	&.tags
+		&:before
+			content '\f02c'
+
+	&.category
+		&:before
+			content '\f07b'
 
 .archive
-  box-shadow 1px 2px 3px color-border
-  border-bottom 1px solid color-border
-  margin-bottom 50px
-  article
-    box-shadow none
-    .post-content
-      margin-bottom 0
+	box-shadow 1px 2px 3px color-border
+	border-bottom 1px solid color-border
+	margin-bottom 50px
+	article
+		box-shadow none
+		.post-content
+			margin-bottom 0
+
+.archive-page 
+	border-bottom 1px solid #ddd
+.entry-category
+		list-style none
+		margin 2% 5%
+		li
+			line-height 1.5em
+		small
+			margin-left 1em
+			color color-meta
+			&:before
+				content '('
+			&:after
+				content ')'
+
+.entry-tags
+	margin 0 30% 10% 5%
+	a
+		margin-right 10px
+		display inline-block
+		line-height 1.5em

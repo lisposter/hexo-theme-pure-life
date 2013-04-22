@@ -10,8 +10,6 @@ blogroll:
 
 
 widgets: 
-- category
-- tagcloud
 - blogroll
 
 excerpt_link: Read More
