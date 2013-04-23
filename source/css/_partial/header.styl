@@ -31,6 +31,24 @@
 		text-indent 1em
 		@media screen and (max-width: 600px)
 			display none
+	
+	.search
+		.search-box
+			-webkit-appearance  textfield
+			background #fff
+			font-family font-title
+			font-style italic
+			font-size 1em
+			margin-top 3em
+			padding 2px 1em
+			border none
+			border-bottom 1px dashed color-border
+			width 100%
+			box-sizing border-box
+			color color-meta
+			&:focus
+				color color-font
+
 
 	#header-nav
 		font-family font-title
@@ -39,7 +57,7 @@
 			float right
 		ul
 			list-style none
-			margin 4em 0
+			margin 2em 1em
 			@media screen and (max-width: 600px)
 				margin 0
 				height 48px

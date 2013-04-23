@@ -1,5 +1,13 @@
-	<h1><a href="<%- config.root %>"><%= config.title %></a></h1>
-	<h2><% if (config.subtitle){ %><%= config.subtitle %><% } %></h2>
+<h1><a href="<%- config.root %>"><%= config.title %></a></h1>
+<h2><% if (config.subtitle){ %><%= config.subtitle %><% } %></h2>
+
+<div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input class ="search-box" type="search" name="q" placeholder="<%= __('search') %>">
+    <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
+  </form>
+</div>
+
 <nav id="header-nav" class="clearfix">
 	<ul>
 		<% for (var i in theme.menu){ %>
