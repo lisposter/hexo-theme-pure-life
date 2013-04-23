@@ -31,6 +31,10 @@ bdlike:
 
 fancybox: true
 
+# baidu_tongji: this is your baidu tongji specific code.
+# Get your js code from http://tongji.baidu.com, it will contain a string like: hm.baidu.com/h.js%3ggbf1a6d0bf6e359db3j5h089c718e9sd  , and then, your specific code is %3ggbf1a6d0bf6e359db3j5h089c718e9sd 
+baidu_tongji: 
+
 google_analytics:
 rss:
 

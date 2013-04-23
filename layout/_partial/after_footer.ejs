@@ -15,7 +15,6 @@ var disqus_shortname = '<%= theme.social_comment.disqus_shortname %>';
 }());
 </script>
 <% } else if (theme.social_comment.duoshuo_shortname && theme.social_comment.plat == 2) {%>
-
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"<%= theme.social_comment.duoshuo_shortname %>"};
 	(function() {
@@ -50,4 +49,11 @@ var duoshuoQuery = {short_name:"<%= theme.social_comment.duoshuo_shortname %>"};
 	};
 	document.getElementById("bdlike_shell").src="http://bdimg.share.baidu.com/static/js/like_shell.js?t=" + Math.ceil(new Date()/3600000);
 	</script>
+<% } %>
+
+<% if (theme.baidu_tongji){ %>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js<%= theme.baidu_tongji %>' type='text/javascript'%3E%3C/script%3E"));
+</script>
 <% } %>
