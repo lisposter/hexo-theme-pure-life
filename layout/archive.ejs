@@ -1,21 +1,21 @@
 <div class="archive-page">
 <% if (site.categories.length){ %>
-  <h2 class="archive-title category"><%= __('categories') %></h3>
-  <ul class="entry-category">
-  <% site.categories.sort('name').each(function(item){ %>
-    <li><a href="<%- config.root %><%- item.path %>"><%= item.name %></a><small><%= item.posts.length %></small></li>
-  <% }); %>
-  </ul>
+	<h2 class="archive-title category"><%= __('categories') %></h3>
+	<ul class="entry-category">
+	<% site.categories.sort('name').each(function(item){ %>
+		<li><a href="<%- config.root %><%- item.path %>"><%= item.name %></a><small><%= item.posts.length %></small></li>
+	<% }); %>
+	</ul>
 <% } %>
 
 <% if (site.tags.length){ %>
-  <h2 class="archive-title tags"><%= __('tagcloud') %></h3>
-  <div class="entry-tags">
-    <%- tagcloud(site.tags, {}) %>
-  </div>
+	<h2 class="archive-title tags"><%= __('tagcloud') %></h3>
+	<div class="entry-tags">
+		<%- tagcloud(site.tags, {}) %>
+	</div>
 <% } %>
 
 <% if(page.year) { %>
-  <p><%= page.year %></p>
+	<p><%= page.year %></p>
 <% } %>
 </div>
